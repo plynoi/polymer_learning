@@ -1,0 +1,11 @@
+{
+  "name": "getstart",
+  "version": "0.0.0",
+  "description": "learning bower from getstart",
+  "authors": [
+    "Wasin Waeosri"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  }
+}
