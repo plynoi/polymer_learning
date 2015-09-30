@@ -1,4 +1,4 @@
-<link rel="import" href="../bower_components/polymer/polymer.html" >
+<link rel="import" href="../bower_components/polymer/polymer.html">
 
 <script>
 	//register a new element called proto-element
@@ -7,8 +7,22 @@
 		is:'proto-element',
 		//add a callback to the element's prototype
 		ready: function(){
-			this.textContent = "I'm a proto-element. Check out my prototype!"
-		}
+			this.textContent = "I'm a proto-element. Check out my prototype!";
+			console.log('[DEBUG] ready called!');
+		},
+		created: function(){
+			this.textContent = "My element!";
+			console.log('[DEBUG] created called!');
+		},
+		attached: function(){
+			this.textContent = "Attached!";
+			console.log('[DEBUG] attached called!');
+		},
+		detached: function() {
+			this.textContent = "detached!";
+			console.log('[DEBUG] detached called!');
+    		//console.log(this.localName + '#' + this.id + ' was detached');
+  		}
 	});
-	
+
 </script>

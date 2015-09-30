@@ -1,0 +1,27 @@
+<!-- https://www.polymer-project.org/1.0/docs/devguide/local-dom.html-->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="dom-element">
+	<template>
+		<div id="container">
+			 <div id="first"></div>
+			<p>Hello World from <span id="name"></span>!</p>
+		</div>
+	</template>
+	
+	<script>
+		Polymer({
+			is: 'dom-element',
+			created: function(){
+				console.log('[DEBUG] created called!');
+			},
+			ready: function(){
+				this.$.name.textContent = 'Wasin';
+				console.log('[DEBUG] ready called!');
+				
+				var insert = document.createElement('div');
+				Polymer.dom(this.$.container).insertBefore(insert, this.$.first);
+			}
+		});
+	</script>
+</dom-module>
