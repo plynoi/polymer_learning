@@ -16,3 +16,8 @@ This is a project to learn how to use local DOM.
 This is a project to learn Compose with local DOM.
 - index.html: the main file
 - picture-frame.html: the customize and component html file
+
+##name-tag
+This is a project to learn [Data Binding](https://www.polymer-project.org/1.0/docs/devguide/data-binding.html
+- index.html: the main file
+- picture-frame.html: the customize and component html file
