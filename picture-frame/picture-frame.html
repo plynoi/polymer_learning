@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<dom-module id="picture-frame">
+    <template>
+        <!-- scoped CSS for this element -->
+        <style>
+            div {
+                display: inline-block;
+                background-color: #ccc;
+                border-radius: 8px;
+                padding: 4px;
+            }
+        </style>
+        <div>
+            <!-- any children are rendered here -->
+            <content></content>
+        </div>
+    </template>
+    
+    <script>
+        Polymer({
+           is: 'picture-frame' 
+        });
+    </script>
+</dom-module>
+
+<!-- Note 
+
+The <picture-frame>
+      <img src="images/p-logo-32.png">
+      <p>Hello</p>
+    </picture-frame>
+will be inserted in the <content></content> in side <div> of the template
+
+-->

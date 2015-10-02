@@ -11,3 +11,8 @@ This is a project to learn how to register an element.
 This is a project to learn how to use local DOM.
 - index.html: the main file
 - dom-element.html: the customize and component html file
+
+##picture-frame
+This is a project to learn Compose with local DOM.
+- index.html: the main file
+- picture-frame.html: the customize and component html file
